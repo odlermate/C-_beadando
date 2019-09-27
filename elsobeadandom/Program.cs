@@ -19,7 +19,8 @@ namespace elsobeadandom
                 szamok.Add(Convert.ToInt32(Console.ReadLine()));
             }
             int max = szamok.Max();
-            Console.WriteLine("A legnagyobb szám: " + max);
+            int min = szamok.Min();
+            Console.WriteLine("A legnagyobb szám: {0}, legkissebb pedig: {1}", max , min);
 
 
             Console.ReadKey();
