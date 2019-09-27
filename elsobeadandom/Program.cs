@@ -15,8 +15,16 @@ namespace elsobeadandom
             int e = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < e; i++)
             {
-                Console.WriteLine("Kérlek add meg a(z) {0}. számot ", i +1);
-                szamok.Add(Convert.ToInt32(Console.ReadLine()));
+                try
+                {
+                    Console.WriteLine("Kérlek add meg a(z) {0}. számot ", i + 1);
+                    szamok.Add(Convert.ToInt32(Console.ReadLine()));
+                }catch
+                {
+                    Console.WriteLine("Nem jó számot adtál meg, próbáld újra");
+                    i--;
+                }
+                
             }
             int max = szamok.Max();
             int min = szamok.Min();
