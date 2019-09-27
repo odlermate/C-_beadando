@@ -10,6 +10,7 @@ namespace elsobeadandom
     {
         static void Main(string[] args)
         {
+            Console.WriteLine();
         }
     }
 }
